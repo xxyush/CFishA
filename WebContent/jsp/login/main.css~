@@ -1,0 +1,113 @@
+h1{
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1em;
+    margin-bottom: 0;
+    margin-top: 1em;
+	
+	
+}
+
+body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+        color: #666666;
+        font: small "Trebuchet MS",Arial,Helvetica,sans-serif;
+	background:none repeat scroll 0 0 #FFF;
+}
+
+#main {
+	background: url("../../images/img02.jpg") no-repeat scroll 0 0 transparent;
+    border-top: 1px solid #FFFFFF;
+    margin: 0 auto;
+    padding: 20px;
+    width: 920px;
+	
+}
+
+
+
+#center {
+	 float: left;    
+	 padding-left: 4px;   
+	 width: 920px;
+	 height :100%;
+	 clear 
+	
+}
+
+
+#center .title {
+	background: url("../../images/img06.gif") repeat-x scroll 0 0 #3C74E6;
+    color: #FFFFFF;
+    font-size: 1em;
+    height: 28px;
+    padding: 12px 0 0 20px; 
+    font-weight: bold; 
+}
+#center .title label{
+	 background-image: url("../../images/img08.gif") no-repeat scroll 0 0 transparent;	
+	 
+}
+#center .title span{
+	/* background: url("../../images/img10.gif") no-repeat scroll right top transparent;	*/
+}
+#center .title strong{
+	margin-left:15px;
+	padding-right: 612px;
+}
+#center .content {
+    background: url("../../images/img07.gif") repeat-x scroll 0 0 transparent;
+    border-top: 1px solid #FFFFFF;
+/*    padding: 20px;*/
+    height: 120px;
+}
+
+
+#center .content #leftMenu {
+	 float: left;
+    width: 220px;
+	
+	
+}
+
+.complexityDIV {
+    margin: 10px 100px;
+    padding-right: 0;
+
+}
+
+.content h1{
+    background-color: #608EEA;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.complexityDIV td {
+    text-align: right;
+    width:158px;
+    border: 2px solid transparent; 
+}
+
+.progressDIV {
+    height: 150px;
+    width: 720px;
+    margin: 10px 100px;
+    padding-right: 0;
+
+}
+
+.progressInfo{
+    float: left;
+    margin-left: 150pt;
+    margin-top: 30pt;
+    position: relative;
+    width: 400px;
+
+}

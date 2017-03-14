@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CFA</display-name>
+ 
+    
+   
+   <servlet>
+    <servlet-name>getCpuUsed</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getCpuUsed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getCpuUsed</servlet-name>
+    <url-pattern>/getCpuUsed</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getCpuComponentUsed</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getCpuComponentUsed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getCpuComponentUsed</servlet-name>
+    <url-pattern>/getCpuComponentUsed</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getFpgaUsed</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getFpgaUsed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getFpgaUsed</servlet-name>
+    <url-pattern>/getFpgaUsed</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getPower</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getPower</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getPower</servlet-name>
+    <url-pattern>/getPower</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getCpuComponentPower</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getCpuComponentPower</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getCpuComponentPower</servlet-name>
+    <url-pattern>/getCpuComponentPower</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getFpgaPower</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getFpgaPower</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getFpgaPower</servlet-name>
+    <url-pattern>/getFpgaPower</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getCabinetPower</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getCabinetPower</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getCabinetPower</servlet-name>
+    <url-pattern>/getCabinetPower</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getInitialData</servlet-name>
+    <servlet-class>CFA.resourceDisplay.getInitialData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getInitialData</servlet-name>
+    <url-pattern>/getInitialData</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>./jsp/login/login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

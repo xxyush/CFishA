@@ -1,0 +1,146 @@
+
+
+#logo {
+    float: left;
+    height: 50px;
+    width: 420px;
+    font-family: verdana;
+   /* font-size: 1.2em;*/
+}
+
+#logo h1{
+    color: #000000;
+    font-family: verdana;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top:0;	
+}
+
+#logoRight{
+    float: right;
+    height: 60px;
+    width: 160px;
+    margin-top: 3px;
+    background:  url("/CFA/images/logo.png") no-repeat scroll 0 0 transparent;
+	
+}
+#userInfo{
+    clear: right;
+    float: right;
+    height: 50px;
+    width: 280px;
+    margin-top: 20px;
+}
+
+#userInfo a{
+	color: #3E9722;
+    text-decoration: underline;
+		
+}
+
+#userInfo p{
+	font-family:verdana;
+	color: #666666;	
+	font-size: 10pt;
+	text-align: right;
+	margin-top:0;
+}
+
+#menu{
+    height: 35px;
+    margin-top: 98px;
+    position: absolute;
+    visibility: inherit;
+   /* <!--position:absolute;  visibility: inherit;  margin-top:105px;height: 35px; -->*/
+}
+
+
+ul#CFA_MENU, ul#CFA_MENU ul {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.65em;
+}
+ul#CFA_MENU li {
+    float: left;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 1px;
+    padding: 0;
+    position: relative;
+    width: auto;
+}
+ul#CFA_MENU li li {
+    float: none;
+    width: auto;
+
+}
+#CFA_MENU a {
+    color: black;
+    display: block;
+    font-family: verdana;
+    font-size: 11pt;
+    padding: 6px 10px;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    background:  url("/CFA/images/menuBackground.gif") no-repeat scroll 0 0 transparent;
+}
+#CFA_MENU a:focus {
+    outline-style: none;
+    outline-width: medium;
+}
+#CFA_MENU a.no-click {
+    cursor: default;
+}
+#CFA_MENU li a {
+    margin: -22px 0 0;
+}
+#CFA_MENU li li a {
+    margin: 0 0 -1px;
+    background: none repeat scroll 0 0 #999;
+    color:black;
+}
+
+#CFA_MENU li li li a {
+    background: none repeat scroll 0 0 #D1D7DC;
+    margin: 0 0 -1px;
+}
+
+
+#CFA_MENU > li > a.arrow {
+    padding-right: 14px;
+}
+#CFA_MENU ul.arrow-pad > li > a {
+    padding-right: 11px;
+}
+#CFA_MENU li a.arrow, #CFA_MENU > li > a.arrow {
+    background-position: right 50%;
+    background-repeat: no-repeat;
+}
+#CFA_MENU li:hover > a {
+    color: blue;
+ /*  <!-- background-image: url("/CFA/images/menuOnhover.gif"); --> */
+    background: #f08080;
+   
+}
+#CFA_MENU li ul, #CFA_MENU li:hover ul ul, #CFA_MENU li:hover ul ul ul, #CFA_MENU li:hover ul ul ul ul, #CFA_MENU li:hover ul ul ul ul ul, #CFA_MENU li:hover ul ul ul ul ul ul, #CFA_MENU li:hover ul ul ul ul ul ul ul, #CFA_MENU li:hover ul ul ul ul ul ul ul ul {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+#CFA_MENU li:hover ul {
+    display: block;
+}
+#CFA_MENU li li:hover ul, #CFA_MENU li li li:hover ul, #CFA_MENU li li li li:hover ul, #CFA_MENU li li li li li:hover ul, #CFA_MENU li li li li li li:hover ul, #CFA_MENU li li li li li li li:hover ul {
+    display: block;
+    margin-left: 100%;
+}
+#CFA_MENU li:hover ul {
+    margin-left: 0;
+}
+#CFA_MENU ul ul {
+    left: -1px;
+    top: 1px;
+}

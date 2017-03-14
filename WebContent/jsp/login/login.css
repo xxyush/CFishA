@@ -1,0 +1,80 @@
+
+/*h1 {color: #962313;}
+h2 {color: #863333;}
+h3 {color: #763333;}*/
+h1{color:red;}
+h2{color:#00f;}
+h3{color:#00f;}
+#container {width:100%;}
+#header {position: relative; height: 30%; visibility: inherit; width: 90%; margin-left:0%;margin-top: 0%; padding:0px 0px 0px 0px;}
+#left {position: relative;  visibility: inherit; width: 450px; margin-left:18%;margin-top: 0%; padding:5px 0px 5px 0px;float: left;}
+#right{position: relative; visibility: inherit; margin-left:58%;margin-top: 8%; padding:5px 0px 5px 0px;} 
+
+/*<!-- h2#1C5EA8background-image:url(<%=request.getContextPath()%>/images/loginbtn.png); -->
+<%=request.getContextPath()%>/jsp/login/
+
+
+
+*/
+	br{
+		clear:left;
+	}
+	.grouping {
+		width: 358px;
+   		height: 265px;
+		border:solid 1px rgb(230,230,230);
+		padding:5px;
+		margin:10px;
+		
+	}
+	.grouping label{
+	
+	padding-left:10%;
+    padding-right: 10px;
+    text-align: right;
+    width:20%;
+    font-size: 18px;
+	}
+	
+	.grouping	label,input {
+		display : block;
+		float:left;
+		margin-bottom:12px;
+		
+	}
+	.grouping input{
+	width: 50%;
+	}
+	
+	#leftimg{
+	height: 350px; 
+	visibility: inherit; 
+	width: 445px;
+	
+	}
+	
+	#loginTitle{
+	margin-left:35%;
+	color:#1C5EA8;	
+	}
+	
+    #validateInput{
+	width: 30%; 
+    }
+    
+    #ValidationNumbersImg{
+    margin-left: 12px;
+    float:left;
+    clear:right;
+    }
+    
+    #submitInpt{
+    color: white;    
+    font-size: 20px;    
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 40%;
+    background: none repeat scroll 0 0 #1C5EA8; 
+    width: 30%; 
+    height: 30px
+    clear:right;}

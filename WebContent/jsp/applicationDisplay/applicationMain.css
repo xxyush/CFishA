@@ -1,0 +1,289 @@
+@CHARSET "UTF-8";
+
+#programMenu ul li {
+    float: left;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+}
+
+#programMenu ul li a {
+	text-decoration: none;
+	display: block;
+    color :black;
+    padding: 6px 5px;
+}
+#programMenu ul li a:hover {
+	text-decoration: none;
+	display: block;
+    color :blue;
+    padding: 6px 5px;
+}
+#programMenu ul li a:click {
+	text-decoration: none;
+	display: block;
+    color :black;
+    padding: 6px 5px;
+}
+
+/*	-=-=-=-=-=				*/
+.complexityDIV {
+    margin: 20px 100px 0px;
+    padding-right: 0;
+
+}
+
+.progressDIV {
+    height: 150px;
+    width: 720px;
+    margin: 10px 100px;
+    padding-right: 0;
+
+}
+
+.powerCostDIV {
+    height: 150px;
+    width: 720px;
+    margin: 10px 100px;
+    padding-right: 0;
+
+}
+
+.dataTransDIV {
+    height: 150px;
+    width: 720px;
+    margin: 10px 100px;
+    padding-right: 0;
+
+}
+
+
+.complexityDIV td {
+    text-align: right;
+    width:188px;
+    border: 2px solid transparent; 
+}
+#divComplexityRightUp ,#divComplexityLeftDown ,#divComplexityRightDown{
+    margin-top: 10px;
+}
+/*customize the style of  content's title*/
+.content h1{
+    background-color: #608EEA;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+/*customize the table which shows the program's complexity and the request information of user */
+.content #complexityInfoUP,#complexityInfoMID,#complexityInfoDOWN {
+ margin-top: 15px; 
+
+}
+/*customize the progressBar's style*/
+.progressInfo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 30pt;
+    position: relative;
+    width: 600px;
+
+}
+
+.numberInfo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 30pt;
+    position: relative;
+    width: 600px;
+/*letter-spacing:-1em;*/
+}
+
+.progressInfo .dijitProgressBarTile {
+	
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:0;
+	padding:0;
+	width:auto;
+	height:auto;
+	background: url("../../images/progressBarAnim.gif") repeat scroll 0 0  #00F;
+	background-attachment: fixed;
+}
+	
+.progressInfo .dijitProgressBarFull {
+	height:100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.progressInfo .dijitProgressBarEmpty {
+
+    border: 1px solid black;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 0;
+    border-color:deepskyblue;
+}
+
+.progressInfo  .dijitProgressBarLabel {
+    background-color: transparent !important;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+/*the style of powerCost  display*/
+.powerCostDIV h1{
+    background-color: #01CE05;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*the style of dataTrans  display*/
+.dataTransDIV h1{
+    background-color: #F64605;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+/*Begin to definition the Number class   */
+
+.number{font-size:3pt;width:9em;height:14em;border:1px solid #ddd;position:relative;display:inline-block;-webkit-text-size-adjust:none;}
+
+.number div{position: absolute;border-style:solid;}
+
+.number .l,.number .r,.number .u,.number .d{width:0;height:0;overflow:hidden;}
+
+
+.number .v{width:0;height:5em;border-width:0 0.5em;border-color:#01CE05;}
+
+.number .v .u{border-style:dotted dotted solid dotted;border-width:0 0.5em 0.5em;border-color:transparent transparent #01CE05 transparent;top:-0.5em;left:-0.5em;}
+
+.number .v .d{border-style:solid dotted dotted dotted;border-width:0.5em 0.5em 0 0.5em;border-color:#01CE05 transparent transparent transparent;left:-0.5em;bottom:-0.5em}
+
+
+.number .h{width:5.5em;height:0;border-width:0.5em 0;border-color:#01CE05;}
+
+.number .h .l{border-style:dotted solid dotted dotted;border-width:0.5em 0.5em 0.5em 0;border-color:transparent #01CE05 transparent transparent;top:-0.5em;left:-0.5em;}
+
+.number .h .r{border-style:dotted dotted dotted solid;border-width:0.5em 0 0.5em 0.5em;border-color:transparent transparent transparent #01CE05;top:-0.5em;right:-0.5em;}
+
+
+.number .n1{left:0.5em;top:1.5em;}
+
+.number .n2{left:0.5em;top:7.5em;}
+
+.number .n4{left:7.5em;top:7.5em;}
+
+.number .n5{left:7.5em;top:1.5em;}
+
+
+.number .n6{top:0.4em;left:1.8em;}
+
+.number .n3{top:12.5em;left:1.8em;}
+
+.number .n7{top:6.5em;left:1.8em;}
+
+
+.c1 .n1,.c1 .n2,.c1 .n3,.c1 .n6,.c1 .n7{display:none}
+
+.c2 .n1,.c2 .n4{display:none}
+
+.c3 .n1,.c3 .n2{display:none}
+
+.c4 .n2,.c4 .n3,.c4 .n6{display:none}
+
+.c5 .n2,.c5 .n5{display:none}
+
+.c6 .n5{display:none}
+
+.c7 .n1,.c7 .n2,.c7 .n3,.c7 .n7{display:none}
+
+.c8{}
+
+.c9 .n2{display:none}
+
+.c0 .n7{display:none}
+
+.dotDIV {
+	width:2em;
+	height:14em;
+}
+.dot {
+	width:0;
+	height:0;
+	border:0.5em solid #01CE05;
+	position:absolute;
+	left:0.5em;
+}
+.dot{
+	top:11em;
+}
+
+
+/* the numbers of dataTrans's sytle      */
+.dataTransDIV .number .v{width:0;height:5em;border-width:0 0.5em;border-color:#F64605;}
+
+.dataTransDIV .number .v .u{border-style:dotted dotted solid dotted;border-width:0 0.5em 0.5em;border-color:transparent transparent #F64605 transparent;top:-0.5em;left:-0.5em;}
+
+.dataTransDIV .number .v .d{border-style:solid dotted dotted dotted;border-width:0.5em 0.5em 0 0.5em;border-color:#F64605 transparent transparent transparent;left:-0.5em;bottom:-0.5em}
+
+
+.dataTransDIV .number .h{width:5.5em;height:0;border-width:0.5em 0;border-color:#F64605;}
+
+.dataTransDIV .number .h .l{border-style:dotted solid dotted dotted;border-width:0.5em 0.5em 0.5em 0;border-color:transparent #F64605 transparent transparent;top:-0.5em;left:-0.5em;}
+
+.dataTransDIV .number .h .r{border-style:dotted dotted dotted solid;border-width:0.5em 0 0.5em 0.5em;border-color:transparent transparent transparent #F64605;top:-0.5em;right:-0.5em;}
+.dataTransDIV .dot {
+	border:0.5em solid #F64605;
+}
+
+
+/*the input 's style which  has it's unit after the data.*/
+.hasUnit {
+    width: 125px;
+}
+
+
+/* the unit of power */
+#powerUnit {
+    color: #01CE05;
+    float: left;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 60px;
+    position: absolute;
+    right: 410px;
+}
+
+
+
+
+/* the unit of dataTrans */
+#dataTransUnit {
+    color: #F64605;
+    float: left;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 60px;
+    position: absolute;
+    right: 410px;
+}
